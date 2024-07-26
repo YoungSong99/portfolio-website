@@ -1,0 +1,357 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* setting for all */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+address, em, i {
+    font-style: normal;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.en1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
+
+.en2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.en3 {
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #17181d;
+    color: #fff;
+}
+
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+section {
+    width: 100%;
+    height: 110vh;
+}
+
+/* menu */
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+header.active {
+    transform: translateY(-100%);
+}
+
+header .logo {
+    color: #fff;
+}
+
+header .menuOpen {
+    display: none;
+    transition: 0.3s;
+}
+
+.gnb ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb ul li {
+    margin-left: 70px;
+}
+
+.gnb ul li a {
+    display: block;
+}
+
+.gnb ul li a .char {
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    overflow: hidden;
+}
+
+.gnb ul li a .char:before, .gnb ul li a .char:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    color: #fff;
+    content: attr(data-char);
+    transition: transform 0.35s;
+    transition-delay: calc(30ms * var(--char-index));
+}
+
+.gnb ul li a .char:before {
+    transform: translateY(100%);
+}
+
+.gnb ul li a:hover .char:before {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.gnb ul li a:hover .char:after {
+    transform: translateY(-100%);
+}
+
+/* main visual */
+.visual {
+    width: 100%;
+    height: 100vh;
+    padding-top: 125px;
+    box-sizing: border-box;
+    position: relative;
+    letter-spacing: -1px;
+}
+
+.visual .mainText {
+    font-size: 100px;
+    line-height: 1.2;
+    margin: 0 0 150px 60px;
+}
+
+.visual .mainText p {
+    overflow: hidden;
+}
+
+.visual .subText {
+    margin-left: 500px;
+}
+
+.visual .scroll {
+    position: fixed;
+    left: 60px;
+    bottom: 40px;
+}
+
+.visual.motion .mainText {
+    transform: translate3d(0, 0, 0) skewY(0deg);
+    overflow: hidden;
+}
+
+.visual.motion .mainText p span {
+    display: block;
+    animation-name: textAni;
+    animation-duration: 1.8s;
+    animation-timing-function: ease;
+}
+
+.visual.motion .mainText p:nth-child(2) span {
+    animation-duration: 1.7s;
+}
+
+
+@keyframes textAni {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+        transform: translate3d(0, -90px, 0) skewY(-10deg);
+        transform-origin: top left;
+    }
+}
+
+
+@keyframes textAni2 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+.visual.motion .subText {
+    animation-name: textAni2;
+    animation-duration: 2.3s;
+    animation-timing-function: ease;
+}
+
+/* About */
+
+.about01 .aboutWrap {
+    background: #ffffff;
+    color: #17181d;
+    height: 100%;
+}
+
+.about02 .aboutWrap {
+    background: #17181d;
+    color: #ffffff;
+    height: 100%;
+}
+
+
+.about03 .aboutWrap {
+    background: #ffffff;
+    color: #17181d;
+    height: 100%;
+}
+
+.about04 .aboutWrap {
+    background: #17181d;
+    color: #fff;
+    height: 100%;
+}
+
+.aboutWrap {
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.aboutWrap .contBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutWrap .contBox li.left {
+    padding: 100px 0 0 60px;
+    width: 40%;
+}
+
+.aboutWrap .contBox li.left p {
+    font-size: 70px;
+    display: block;
+}
+
+
+.aboutWrap .contBox li.right {
+    width: 60%;
+    padding: 100px 0 0;
+    box-sizing: border-box;
+}
+
+.aboutWrap .contBox li.right .aboutContent {
+    margin-bottom: 50px;
+}
+
+
+.aboutWrap .contBox li.right .subTit {
+    font-size: 30px;
+}
+
+.aboutWrap .contBox li.right .subTit .txtBox {
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+/* project*/
+
+.gallery div {
+    width: 100%;
+}
+
+.gallery .projectDesc {
+    margin-top: 100px;
+}
+
+.gallery .projectDesc .skill{
+    opacity: 0.5;
+}
+
+.gallery .imgBox {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .imgBox li {
+    position: absolute;
+    width: 550px;
+    height: 450px;
+    margin: 0 15px;
+}
+
+.gallery .imgBox li img {
+    width: 100%;
+    height: auto;
+    transform: rotate(5deg);
+}
+
+
+/* main character */
+.about05 {
+    background-color: #17181d;
+}
+
+.character {
+    height: 100vh;
+    position: relative;
+}
+
+.character p.img {
+    font-size: 50px;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.character p.img img {
+    width: 100%;
+}
+
+.character .stage {
+    height: 100%;
+    background-image: url(../img/img_3.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    max-width: 200px;
+    margin: 0 auto;
+}
