@@ -60,6 +60,7 @@ body {
 
 .wrap {
     width: 100%;
+    min-height: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -362,6 +363,52 @@ header .menuOpen {
     object-fit: cover;
     filter: brightness(30%);
     opacity: 0;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    padding: 0 60px;
+    margin-top: auto;
+}
+
+footer .textWrap {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    box-sizing: border-box;
+    font-size: 100px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+footer .textWrap span{
+    font-weight: 200;
+}
+
+footer .textWrap .title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+}
+
+footer .bottom {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+footer .bottom .sns {
+    display: flex;
+}
+
+footer .bottom .sns li {
+    margin-right: 20px;
 }
 
 
