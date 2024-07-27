@@ -89,7 +89,7 @@ $(function () {
             }
             activeImg = image;
 
-            align(e); // 마우스 위치를 즉시 맞추기 위해 호출
+            align(e);
         });
 
         elem.addEventListener('mouseleave', () => {

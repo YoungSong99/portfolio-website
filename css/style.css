@@ -80,7 +80,7 @@ header {
     top: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 100;
-    padding: 20px 60px;
+    padding: 1.5% 5%;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -156,7 +156,7 @@ header .menuOpen {
 .visual .mainText {
     font-size: 100px;
     line-height: 1.2;
-    margin: 0 0 150px 60px;
+    margin: 0 0 15% 5%;
 }
 
 .visual .mainText p {
@@ -164,13 +164,13 @@ header .menuOpen {
 }
 
 .visual .subText {
-    margin-left: 500px;
+    margin-left: 43%;
 }
 
 .visual .scroll {
     position: fixed;
-    left: 60px;
-    bottom: 40px;
+    left: 5%;
+    bottom: 3%;
 }
 
 .visual .scroll span {
@@ -406,9 +406,45 @@ footer .bottom {
 footer .bottom .sns {
     display: flex;
 }
-
-footer .bottom .sns li {
+footer .bottom .sns li a {
+    display: block;
     margin-right: 20px;
 }
 
+footer .bottom .sns li a .char {
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    overflow: hidden;
+}
 
+footer .bottom .sns li a .char::before,
+footer .bottom .sns li a .char:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    color: #fff;
+    content: attr(data-char);
+    transition: transform 0.35s ease-in-out;
+    transition-delay: calc(30ms * var(--char-index));
+}
+
+footer .bottom .sns li a .char:before {
+    transform: translateY(100%);
+    opacity: 1;
+}
+
+footer .bottom .sns li a:hover .char:before {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+footer .bottom .sns li a:hover .char:after {
+    transform: translateY(-100%);
+}
+
+
+/* responsiveWeb */
+
+@media screen
