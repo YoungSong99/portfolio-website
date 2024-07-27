@@ -444,6 +444,201 @@ footer .bottom .sns li a:hover .char:after {
     transform: translateY(-100%);
 }
 
+footer .textWrap a.btn {
+    display: block;
+    font-size: 20px;
+    color: #17181d;
+    width: 150px;
+    height: 50px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+footer .textWrap a.btn:hover {
+    background: #f3931b;
+}
+
+
+/* responsive */
+/*@media screen and (max-width: 1024px) {*/
+/*    .visual .*/
+/*}*/
+
+
+/* hide nav */
+@media screen and (max-width: 800px) {
+    .wrap {
+        font-size: 16px;
+    }
+
+    header .menuOpen {
+        display: block;
+        position: relative;
+        width: 32px;
+        height: 10px;
+        margin-top: 10px;
+        transition: top 0.5s;
+        z-index: 101;
+    }
+
+    header .menuOpen span.a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        background: #ffffff;
+    }
+
+    header .menuOpen span.b {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: #ffffff;
+    }
+
+    .gnb {
+        position: fixed;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        background: #fff;
+        left: 0;
+        top: -100%;
+        color: #17181d;
+        z-index: 100;
+        transition: top 0.5s;
+    }
+
+    .gnb ul {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .gnb ul li {
+        margin-left: 0;
+    }
+
+    .gnb ul li a {
+        font-size: 18vw;
+        line-height: 1.4;
+        letter-spacing: -1px;
+    }
+
+    .gnb ul li:nth-child(1),
+    .gnb ul li:nth-child(3) {
+        font-weight: 200;
+    }
+
+    .gnb ul li:nth-child(2) {
+        font-style: italic;
+        font-weight: 400;
+    }
+
+    .gnb ul li a .char {
+        color: #17181d;
+        overflow: inherit;
+    }
+
+    .gnb ul li a .char:before,
+    .gnb ul li a .char:after {
+        display: none;
+    }
+
+    .gnb.on {
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    body.on {
+        overflow: hidden;
+    }
+
+    header .logo {
+        font-size: 25px;
+    }
+
+    header .menuOpen.on span.a {
+        background: #17181d;
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    header .menuOpen.on span.b {
+        background: #17181d;
+        transform: rotate(-45deg) translate(2px, -1px);
+    }
+
+    .visual div.subText {
+        margin: 0 5%;
+        font-size: 20px;
+    }
+
+    .visual .scroll {
+        display: none;
+    }
+
+
+    .aboutWrap .contBox {
+        flex-direction: column;
+    }
+
+    .aboutWrap .contBox li.left {
+        max-width: 100%;
+        margin: 15% 0 0 15%;
+        padding: 0;
+    }
+
+
+    .aboutWrap .contBox .left .aboutTitle {
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .aboutWrap .contBox li.right {
+        max-width: 100%;
+        margin-left: 15%;
+    }
+
+    .aboutWrap .contBox li.right .subTit {
+        font-size: 30px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .aboutWrap .contBox li.right .txtBox {
+        font-size: 25px;
+        font-weight: 300;
+        opacity: 0.9;
+    }
+
+    .aboutWrap .contBox li.right .txtBox p:nth-last-child(1) {
+        font-size: 25px;
+        opacity: 0.6;
+    }
+
+
+    .portfolioWrap .contBox {
+        flex-direction: column;
+    }
+
+    section.portfolio .portfolioWrap .contBox li.right {
+        max-width: 100%;
+        padding: 0;
+        margin-left: 15%; /* Ensure margin is removed in media query */
+    }
+
+    .portfolioWrap .contBox .left p.aboutTitle {
+        font-size: 50px;
+        font-weight: 400;
+        padding-left: 10px;
+    }
 
 /* responsiveWeb */
 

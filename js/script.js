@@ -1,3 +1,8 @@
+$(document).on('click', 'a[href="#"]',
+    function (e) {
+        e.preventDefault();
+    })
+
 // menu splitting
 $(function () {
     Splitting();
@@ -37,7 +42,7 @@ $(function () {
             start: 'top top',
             pin: true,
             pinSpacing: false,
-            markers: true
+            // markers: true
         });
     });
 
@@ -50,7 +55,7 @@ $(function () {
         start: "top top",
         pin: true,
         pinSpacing: true,
-        markers: true
+        // markers: true
     });
 });
 
@@ -98,3 +103,13 @@ $(function () {
         });
     });
 });
+
+// menu open
+
+$(function (){
+    $('.menuOpen').on('click', function (){
+        $('.gnb').toggleClass('on');
+        $(this).toggleClass('on');
+        $('body').toggleClass('on');
+    })
+})
