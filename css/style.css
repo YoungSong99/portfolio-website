@@ -195,8 +195,6 @@ header .menuOpen {
 }
 
 
-
-
 @keyframes textAni {
     0% {
         opacity: 0;
@@ -276,7 +274,7 @@ header .menuOpen {
 
 .aboutWrap .contBox li.right {
     width: 60%;
-    padding: 100px 0 0;
+    padding: 100px 0;
     box-sizing: border-box;
 }
 
@@ -290,7 +288,6 @@ header .menuOpen {
 }
 
 .aboutWrap .contBox li.right .subTit .txtBox {
-    font-size: 30px;
     margin-bottom: 100px;
 }
 
@@ -309,7 +306,7 @@ header .menuOpen {
     justify-content: space-between;
 }
 
-.portfolio .portfolioWrap .contBox .left{
+.portfolio .portfolioWrap .contBox .left {
     padding: 100px 0 0 60px;
     width: 40%;
 }
@@ -319,13 +316,13 @@ header .menuOpen {
     display: block;
 }
 
-.portfolio .portfolioWrap .contBox .right{
+.portfolio .portfolioWrap .contBox .right {
     display: block;
     padding: 100px 60px 0 0;
     width: 60%;
 }
 
-.portfolio .portfolioWrap .contBox .right .title{
+.portfolio .portfolioWrap .contBox .right .title {
     font-size: 30px;
     display: block;
     margin-top: 30px;
@@ -383,7 +380,7 @@ footer .textWrap {
     letter-spacing: -1px;
 }
 
-footer .textWrap span{
+footer .textWrap span {
     font-weight: 200;
 }
 
@@ -406,6 +403,7 @@ footer .bottom {
 footer .bottom .sns {
     display: flex;
 }
+
 footer .bottom .sns li a {
     display: block;
     margin-right: 20px;
@@ -640,6 +638,27 @@ footer .textWrap a.btn:hover {
         padding-left: 10px;
     }
 
-/* responsiveWeb */
+    footer .textWrap {
+        font-size: 40px;
+        line-height: 1.4;
+    }
 
-@media screen
+    footer .textWrap .contact {
+        word-wrap: break-word; /* 긴 단어나 URL을 줄바꿈 */
+        word-break: break-all; /* 긴 단어나 URL을 강제로 줄바꿈 */
+        white-space: normal; /* 줄바꿈 허용 */
+    }
+
+
+    footer .textWrap a.btn {
+        display: block;
+        width: 150px;
+        height: 50px;
+        background: #ffffff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50px;
+    }
+}
+
+
