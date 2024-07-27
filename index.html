@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Young's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/plugin/scrolla.jquery.min.js"></script>
     <script src="js/plugin/splitting.min.js"></script>
@@ -13,177 +13,178 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="wrap">
-        <header>
-            <a href="index.html" class="logo en1">
-                <span class="en1">YOUNG</span> SONG
-            </a>
-            <nav class="gnb en2">
-                <ul>
-                    <li><a href="#" data-splitting>About</a></li>
-                    <li><a href="#" data-splitting>Project</a></li>
-                    <li><a href="#" data-splitting>Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="menuOpen">
-                <span class="a"></span>
-                <span class="b"></span>
-            </a>
-        </header>
-        <section class="visual animate" data-animate="motion">
-            <div class="mainText">
-                <p class="en2"><span>Hello, I'm</span></p>
-                <p><span>Young Song</span></p>
-            </div>
-            <div class="subText">
-                I'm a former Army veteran, an apprentice software engineer at Discovery Partners Institute.<br>
-                My passion for technology blossomed through community projects.<br>
-                I am interested in using technology to solve complex problems
-                and improve the quality of life for individuals and communities.
-            </div>
-            <div class="scroll">Scroll Down</div>
-        </section>
-        <section class="about01">
-            <div class="aboutWrap">
-                <ul class="contBox">
-                    <li class="left">
-                        <p class="aboutTitle">Education</p>
-                    </li>
-                    <li class="right">
-                        <div class="aboutContent">
-                            <div class="subTit">
-                                Master of Science in Computer Science
-                            </div>
-                            <div class="txtBox">
-                                <p class="en1">DePaul University</p>
-                                <p class="en3">Expected Jun 2025</p>
-                            </div>
+<div class="wrap">
+    <header>
+        <a class="logo en1" href="index.html">
+            <span class="en1">YOUNG</span> SONG
+        </a>
+        <nav class="gnb en2">
+            <ul>
+                <li><a data-splitting href="#about">About</a></li>
+                <li><a data-splitting href="#project">Project</a></li>
+                <li><a data-splitting href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="menuOpen" href="#">
+            <span class="a"></span>
+            <span class="b"></span>
+        </a>
+    </header>
+    <section class="visual animate" data-animate="motion">
+        <div class="mainText">
+            <p class="en2"><span>Hello, I'm</span></p>
+            <p><span>Young Song</span></p>
+        </div>
+        <div class="subText">
+            I'm a former Army veteran, an apprentice software engineer at Discovery Partners Institute.<br>
+            My passion for technology blossomed through community projects.<br>
+            I am interested in using technology to solve complex problems
+            and improve the quality of life for individuals and communities.
+        </div>
+        <div class="scroll">Scroll Down<span>⇣</span> </div>
+    </section>
+    <section class="about01" id="about">
+        <div class="aboutWrap">
+            <ul class="contBox">
+                <li class="left">
+                    <p class="aboutTitle">Education</p>
+                </li>
+                <li class="right">
+                    <div class="aboutContent">
+                        <div class="subTit">
+                            Master of Science in Computer Science
                         </div>
-                        <div class="aboutContent">
-                            <div class="subTit">
-                                Bachelor of Arts in Literature
-                            </div>
-                            <div class="txtBox">
-                                <p class="en1">Chung-Ang University</p>
-                                <p class="en3">Reserve Officers' Training Corps (ROTC) Program</p>
-                            </div>
+                        <div class="txtBox">
+                            <p class="en1">DePaul University</p>
+                            <p class="en3">Expected Jun 2025</p>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="about02">
-            <div class="aboutWrap">
-                <ul class="contBox">
-                    <li class="left">
-                        <p class="aboutTitle">Experience</p>
-                    </li>
-                    <li class="right">
-                        <div class="aboutContent">
-                            <div class="subTit">
-                                Software Developer Apprentice
-                            </div>
-                            <div class="txtBox">
-                                <p class="en1">Discovery Partners Institute</p>
-                                <p class="en3">May 2024 - Aug 2024 </p>
-                            </div>
+                    </div>
+                    <div class="aboutContent">
+                        <div class="subTit">
+                            Bachelor of Arts in Literature
                         </div>
-                        <div class="aboutContent">
-                            <div class="subTit">
-                                Software Engineer Intern
-                            </div>
-                            <div class="txtBox">
-                                <p class="en1">Dauth Network</p>
-                                <p class="en3">Jan 2024 - Apr 2024</p>
-                            </div>
+                        <div class="txtBox">
+                            <p class="en1">Chung-Ang University</p>
+                            <p class="en3">Reserve Officers' Training Corps (ROTC) Program</p>
                         </div>
-                        <div class="aboutContent">
-                            <div class="subTit">
-                                Web Manager
-                            </div>
-                            <div class="txtBox">
-                                <p class="en1">Chicago Mental Health Institute</p>
-                                <p class="en3">May 2022 - Mar 2023</p>
-                            </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about02">
+        <div class="aboutWrap">
+            <ul class="contBox">
+                <li class="left">
+                    <p class="aboutTitle">Experience</p>
+                </li>
+                <li class="right">
+                    <div class="aboutContent">
+                        <div class="subTit">
+                            Software Developer Apprentice
                         </div>
-                        <div class="aboutContent">
-                            <div class="subTit">
-                                Republic of Korea Army
-                            </div>
-                            <div class="txtBox">
-                                <p class="en1">Republic of Korea Army</p>
-                                <p class="en3">Mar 2014 - Apr 2019</p>
-                            </div>
+                        <div class="txtBox">
+                            <p class="en1">Discovery Partners Institute</p>
+                            <p class="en3">May 2024 - Aug 2024 </p>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="about03">
-            <div class="aboutWrap">
-                <ul class="contBox">
-                    <li class="left">
-                        <p class="aboutTitle">Volunteering</p>
-                    </li>
-                    <li class="right">
-                        <div class="aboutContent">
-                            <div class="subTit">
-                                Web Developer
-                            </div>
-                            <div class="txtBox">
-                                <p class="en1">Woori Community Center</p>
-                                <p class="en3">May 2022 - Mar 2023</p>
-                            </div>
+                    </div>
+                    <div class="aboutContent">
+                        <div class="subTit">
+                            Software Engineer Intern
                         </div>
-                        <div class="aboutContent">
-                            <div class="subTit">
-                                Algorithms Study Group Co-Leader
-                            </div>
-                            <div class="txtBox">
-                                <p class="en1">Simple Steps Community Connection</p>
-                                <p class="en3">Jan 2023 - Jan 2024</p>
-                            </div>
+                        <div class="txtBox">
+                            <p class="en1">Dauth Network</p>
+                            <p class="en3">Jan 2024 - Apr 2024</p>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="about04 gallery">
-            <div class="aboutWrap">
-                <ul class="contBox">
-                    <li class="left">
-                        <p class="aboutTitle">Project</p>
-                        <div class="projectDesc">
-                            <ul>
-                                <li><a href="#" class="en1">CityFinder</a></li>
-                                <li><a href="#" class="skill">Ruby | Ruby on Rails | JavaScript | React</a></li>
-                                <li><a href="#" class="en1">LinkedIn Data Dashboard</a></li>
-                                <li><a href="#" class="skill">PowerBI | SQL | Pentaho </a></li>
-                                <li><a href="#" class="en1">E-commerce Website: YoungLeeHan</a></li>
-                                <li><a href="#" class="skill">JavaScript | NodeJS | Express | React</a></li>
-                                <li><a href="#" class="en1">Black Wing Hacks 2024: PadForward</a></li>
-                                <li><a href="#" class="skill">JavaScript | NodeJS | Express | React</a></li>
-                            </ul>
-                            <a href="" class="btn">Read More</a>
+                    </div>
+                    <div class="aboutContent">
+                        <div class="subTit">
+                            Web Manager
                         </div>
-                    </li>
-                    <li class="right">
-                        <ul class="imgBox">
-                            <li class="img1 upBox"><img src="img/img01.png" alt=""></li>
-                            <li class="img2 upBox"><img src="img/img02.png" alt=""></li>
-                            <li class="img3 upBox"><img src="img/img03.png" alt=""></li>
-                            <li class="img4 upBox"><img src="img/img04.png" alt=""></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="about05 character">
-            <div class="stage"></div>
-            <p class="img title">
-                Let's Connect!
-            </p>
-        </section>
+                        <div class="txtBox">
+                            <p class="en1">Chicago Mental Health Institute</p>
+                            <p class="en3">May 2022 - Mar 2023</p>
+                        </div>
+                    </div>
+                    <div class="aboutContent">
+                        <div class="subTit">
+                            Republic of Korea Army
+                        </div>
+                        <div class="txtBox">
+                            <p class="en1">Republic of Korea Army</p>
+                            <p class="en3">Mar 2014 - Apr 2019</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about03">
+        <div class="aboutWrap">
+            <ul class="contBox">
+                <li class="left">
+                    <p class="aboutTitle">Volunteering</p>
+                </li>
+                <li class="right">
+                    <div class="aboutContent">
+                        <div class="subTit">
+                            Web Developer
+                        </div>
+                        <div class="txtBox">
+                            <p class="en1">Woori Community Center</p>
+                            <p class="en3">May 2022 - Mar 2023</p>
+                        </div>
+                    </div>
+                    <div class="aboutContent">
+                        <div class="subTit">
+                            Algorithms Study Group Co-Leader
+                        </div>
+                        <div class="txtBox">
+                            <p class="en1">Simple Steps Community Connection</p>
+                            <p class="en3">Jan 2023 - Jan 2024</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio" id="project">
+        <div class="portfolioWrap">
+            <ul class="contBox">
+                <li class="left">
+                    <p class="aboutTitle">Project</p>
+                </li>
+                <li class="right">
+                    <ul>
+                        <li><a class="en1" href="https://github.com/YoungSong99/city-finder-web-app">
+                            <img class="fadeImg" src= "img/cityfinder.png" alt="">
+                            <p class="title en1">CityFinder</p>
+                            <p class="color en2">Ruby | Ruby on Rails | JavaScript | React</p></a>
+                        </li>
+                        <li><a class="en1" href="https://github.com/CSC453-Group-Project/LinkedIn">
+                            <img class="fadeImg" src= "img/linkedin.png" alt="">
+                            <p class="title en1">LinkedIn Data Dashboard</p>
+                            <p class="color en2">PowerBI | SQL | Pentaho</p></a>
+                        </li>
+                        <li><a class="en1" href="https://youngleehankorean.com/">
+                            <img class="fadeImg" src= "img/youngleehan.png" alt="">
+                            <p class="title en1">E-commerce Website: YoungLeeHan</p>
+                            <p class="color en2">JavaScript | NodeJS | Express | React</p></a>
+
+                        </li>
+                        <li><a class="en1" href="https://padforward.us/">
+                            <img class="fadeImg" src= "img/padfoward.png" alt="">
+                            <p class="title en1">Black Wing Hacks 2024: PadForward</p>
+                            <p class="color en2">avaScript | NodeJS | Express | React</p></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="contact">
+        <p>Thank You</p>
     </div>
+</div>
 </body>
 </html>

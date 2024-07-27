@@ -172,6 +172,11 @@ header .menuOpen {
     bottom: 40px;
 }
 
+.visual .scroll span {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
 .visual.motion .mainText {
     transform: translate3d(0, 0, 0) skewY(0deg);
     overflow: hidden;
@@ -187,6 +192,8 @@ header .menuOpen {
 .visual.motion .mainText p:nth-child(2) span {
     animation-duration: 1.7s;
 }
+
+
 
 
 @keyframes textAni {
@@ -239,9 +246,10 @@ header .menuOpen {
 
 .about04 .aboutWrap {
     background: #17181d;
-    color: #fff;
-    height: 100%;
+    color: #ffffff;
+    height: 100vh;
 }
+
 
 .aboutWrap {
     border-radius: 50px 50px 0 0;
@@ -286,72 +294,74 @@ header .menuOpen {
 }
 
 /* project*/
-
-.gallery div {
-    width: 100%;
-}
-
-.gallery .projectDesc {
-    margin-top: 100px;
-}
-
-.gallery .projectDesc .skill{
-    opacity: 0.5;
-}
-
-.gallery .imgBox {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gallery .imgBox li {
-    position: absolute;
-    width: 550px;
-    height: 450px;
-    margin: 0 15px;
-}
-
-.gallery .imgBox li img {
-    width: 100%;
-    height: auto;
-    transform: rotate(5deg);
-}
-
-
-/* main character */
-.about05 {
-    background-color: #17181d;
-}
-
-.character {
+.portfolio .portfolioWrap {
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    background: #17181d;
+    color: #fff;
     height: 100vh;
-    position: relative;
-}
-
-.character p.img {
-    font-size: 50px;
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.character p.img img {
     width: 100%;
 }
 
-.character .stage {
-    height: 100%;
-    background-image: url(../img/img_3.png);
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    max-width: 200px;
-    margin: 0 auto;
+.portfolio .portfolioWrap .contBox {
+    display: flex;
+    justify-content: space-between;
 }
+
+.portfolio .portfolioWrap .contBox .left{
+    padding: 100px 0 0 60px;
+    width: 40%;
+}
+
+.portfolio .portfolioWrap .contBox .left p {
+    font-size: 70px;
+    display: block;
+}
+
+.portfolio .portfolioWrap .contBox .right{
+    display: block;
+    padding: 100px 60px 0 0;
+    width: 60%;
+}
+
+.portfolio .portfolioWrap .contBox .right .title{
+    font-size: 30px;
+    display: block;
+    margin-top: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio .portfolioWrap .contBox .right .color {
+    font-size: 20px;
+    font-weight: 200;
+    opacity: 0.8;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio .portfolioWrap .contBox .right a:hover .title {
+    font-size: 40px;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    line-height: 0.85;
+}
+
+.portfolio .portfolioWrap .contBox .right a:hover .color {
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    color: #f3931b;
+}
+
+
+.fadeImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(30%);
+    opacity: 0;
+}
+
+
